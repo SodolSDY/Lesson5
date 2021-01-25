@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Conversion {
+   public static void payCredit(int credit,int summa){
+      if (credit ==summa){
+         System.out.println("Кредит погашен!");
+      } else if (credit < summa){
+         System.out.println("Вы переплатили: "+ (summa - credit));
+      } else if (credit>summa) {
+         System.out.println("Остаток долга: " + (credit - summa));
+      }
+
+   }
+
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("На какую сумму кредит: ");
+      int credit = sc.nextInt();
+      System.out.print("Платеж :");
+      int summa = sc.nextInt();
+      payCredit(credit, summa);
