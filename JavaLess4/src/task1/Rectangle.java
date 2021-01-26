@@ -1,3 +1,5 @@
+package task1;
+
 public class Rectangle extends Shape {
 
     @Override
